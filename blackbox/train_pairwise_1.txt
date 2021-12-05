@@ -1,0 +1,13 @@
+# Software engineering 8-BlackBoxTest 2-B
+# Input text file for PICT.(https://github.com/microsoft/pict)
+
+Departure:     서울, 대전, 동대구, 부산
+Arrival:    서울, 대전, 동대구, 부산     
+Type:      KTX, 새마을
+Class:       일반, 특실
+
+[Departure] <> [Arrival];
+# 출발지와 도착지는 같아선 안된다.
+
+IF [Type] = "새마을" THEN [Class] = "일반";
+# 새마을호는 일반석만 존재한다.
